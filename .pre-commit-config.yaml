@@ -1,13 +1,20 @@
-- repo: local
-  hooks:
-    - id: pylint  # pure identification
-      name: pylint  # name shown in output
-      entry: pylint  # command to run
-      language: system  # 
-      types: [python] # list of files to run on
-      require_serial: true
-    # - id: check-x
-    #   name: Check X
-    #   entry: ./bin/check-x.sh
-    #   language: script
-    #   files: \.x$
+repos:
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: "v2.6.2" # Use the sha / tag you want to point at
+    hooks:
+      - id: prettier
+        types_or: [yaml, json]
+        args: ["--write"]
+  - repo: local
+    hooks:
+      - id: pylint # pure identification
+        name: pylint # name shown in output
+        entry: pylint # command to run
+        language: system #
+        types: [python] # list of files to run on
+        require_serial: true
+      # - id: check-x
+      #   name: Check X
+      #   entry: ./bin/check-x.sh
+      #   language: script
+      #   files: \.x$
