@@ -5,7 +5,6 @@ see https://github.com/pre-commit/pre-commit-hooks/blob/main/pre_commit_hooks/ch
 from __future__ import annotations
 
 import argparse
-from fileinput import filename
 from typing import Sequence
 
 def main(argv: Sequence[str] | None = None) -> int:
