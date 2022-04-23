@@ -1,5 +1,6 @@
 - [About](#about)
 - [Requirements on any tool like pre-commit](#requirements-on-any-tool-like-pre-commit)
+- [Alternatives to pre-commit](#alternatives-to-pre-commit)
 - [Open questions to pre-commit](#open-questions-to-pre-commit)
 - [Benefits of pre-commit](#benefits-of-pre-commit)
 - [Sidenotes:](#sidenotes)
@@ -21,7 +22,7 @@ Small prototype testing out the [pre-commit package](https://pre-commit.com/).
 - Quickly add other python scripts
   - rather easy to do, simply add one file or function
 
-Alternatives to pre-commit
+# Alternatives to pre-commit
 
 Literature
 
@@ -78,6 +79,7 @@ Literature
 - installs e.g. npm automatically (requires node though)
 - allows to test new checks quickly via e.g. [try-repo](https://pre-commit.com/#developing-hooks-interactively)
   - see e.g https://github.com/pre-commit/pre-commit-hooks/blob/main/pre_commit_hooks/check_yaml.py
+
 
 # Sidenotes:
 
