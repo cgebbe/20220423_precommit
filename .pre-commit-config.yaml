@@ -1,0 +1,13 @@
+- repo: local
+  hooks:
+    - id: pylint  # pure identification
+      name: pylint  # name shown in output
+      entry: pylint  # command to run
+      language: system  # 
+      types: [python] # list of files to run on
+      require_serial: true
+    # - id: check-x
+    #   name: Check X
+    #   entry: ./bin/check-x.sh
+    #   language: script
+    #   files: \.x$
