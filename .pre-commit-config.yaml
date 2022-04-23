@@ -13,6 +13,13 @@ repos:
         language: system #
         types: [python] # list of files to run on
         require_serial: true
+      - id: dummy
+        name: dummy
+        entry: python src/checker.py
+        language: system
+        types: [python] # list of files to run on
+
+
       # - id: check-x
       #   name: Check X
       #   entry: ./bin/check-x.sh
